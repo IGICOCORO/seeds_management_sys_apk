@@ -20,7 +20,6 @@ import okhttp3.Response;
 
 public class Host {
    public static String URL = "http://192.168.43.131:80";
-//    public static String URL = "https://bank.so-mas.net";
 //  public static String URL = "http://10.0.2.2:8000";
     private static SharedPreferences sessionPreference;
 
