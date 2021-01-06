@@ -2,12 +2,17 @@ package bi.infinity.seeds_management_system;
 
 import android.app.Activity;
 import android.content.Context;
+import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.util.Log;
+import android.view.View;
+import android.widget.Toast;
 
 import org.json.JSONObject;
 
 import java.io.IOException;
+import java.util.ResourceBundle;
 
 import okhttp3.Call;
 import okhttp3.Callback;
