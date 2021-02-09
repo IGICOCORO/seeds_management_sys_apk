@@ -1,6 +1,7 @@
 <resources>
-    <string name="app_name">seeds_management_system</string>
+    <string name="app_name">SMS</string>
     <string name="login">login</string>
     <string name="password">Password</string>
     <string name="username">Username</string>
+    <string name="semences">semences</string>
 </resources>

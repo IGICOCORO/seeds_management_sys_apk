@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="176dp">
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="103dp"
+            android:layout_marginEnd="103dp"
+            android:layout_marginRight="103dp"
+            android:text=" Nom du Varièté"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtName"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="101dp"
+            android:layout_marginLeft="267dp"
+            android:layout_marginEnd="267dp"
+            android:layout_marginRight="101dp"
+            android:layout_marginBottom="-101dp"
+            android:text="details:" />
+
+        <TextView
+            android:id="@+id/qte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="265dp"
+            android:layout_marginEnd="265dp"
+            android:layout_marginBottom="-141dp"
+            android:text="Qte en stock:"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="265dp" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/details"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="53dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="53dp"
+            android:layout_marginRight="53dp"
+            android:src="@drawable/ic_launcher_background" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
