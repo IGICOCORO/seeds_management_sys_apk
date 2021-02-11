@@ -9,19 +9,32 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="176dp">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/details"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="53dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="53dp"
+            android:layout_marginRight="53dp"
+            android:src="@drawable/ic_launcher_background" />
 
         <TextView
             android:id="@+id/txtName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
             android:layout_alignParentRight="true"
             android:layout_marginLeft="103dp"
             android:layout_marginEnd="103dp"
             android:layout_marginRight="103dp"
             android:text=" Nom du Varièté"
             android:textStyle="bold" />
+
 
         <TextView
             android:id="@+id/details"
@@ -30,13 +43,11 @@
             android:layout_alignBottom="@+id/txtName"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginStart="101dp"
-            android:layout_marginLeft="267dp"
+            android:layout_marginStart="187dp"
+            android:layout_marginLeft="187dp"
             android:layout_marginEnd="267dp"
             android:layout_marginRight="101dp"
-            android:layout_marginBottom="-101dp"
+            android:layout_marginBottom="-39dp"
             android:text="details:" />
 
         <TextView
@@ -46,25 +57,12 @@
             android:layout_alignBottom="@+id/txtName"
             android:layout_alignParentLeft="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginLeft="265dp"
-            android:layout_marginEnd="265dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="193dp"
+            android:layout_marginEnd="136dp"
+            android:layout_marginRight="136dp"
             android:layout_marginBottom="-141dp"
-            android:text="Qte en stock:"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="265dp" />
-
-        <ImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_below="@id/details"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginLeft="53dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginEnd="53dp"
-            android:layout_marginRight="53dp"
-            android:src="@drawable/ic_launcher_background" />
+            android:text="Qte en stock:" />
     </RelativeLayout>
 
 </androidx.cardview.widget.CardView>
