@@ -58,6 +58,7 @@
                 android:layout_height="35dp"
                 android:background="@drawable/material_button"
                 android:text="login"
+                android:textColor="#fff"
                 android:layout_gravity="end|right"
                 android:onClick="performLogin"/>
             <LinearLayout

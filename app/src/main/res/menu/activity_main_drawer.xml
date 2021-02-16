@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Accueil" />
+        <item
+            android:id="@+id/nav_emissions"
+            android:title="mon stock" />
+
+    </group>
+    <item android:title="Compte">
+        <menu>
+            <item
+                android:id="@+id/action_logout"
+                android:orderInCategory="100"
+                android:title="Logout" />
+        </menu>
+    </item>
+    <item android:title="Autres">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:title="A propos" />
+        </menu>
+    </item>
+
+</menu>

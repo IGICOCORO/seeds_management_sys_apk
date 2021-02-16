@@ -1,68 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardElevation="10dp"
-    app:cardCornerRadius="10dp">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="semences en stock"
+        android:textSize="10pt"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="176dp">
-        <ImageView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_below="@id/details"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginLeft="53dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginEnd="53dp"
-            android:layout_marginRight="53dp"
-            android:src="@drawable/ic_launcher_background" />
-
-        <TextView
-            android:id="@+id/txtName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginLeft="103dp"
-            android:layout_marginEnd="103dp"
-            android:layout_marginRight="103dp"
-            android:text=" Nom du Varièté"
-            android:textStyle="bold" />
-
-
-        <TextView
-            android:id="@+id/details"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/txtName"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_marginStart="187dp"
-            android:layout_marginLeft="187dp"
-            android:layout_marginEnd="267dp"
-            android:layout_marginRight="101dp"
-            android:layout_marginBottom="-39dp"
-            android:text="details:" />
-
-        <TextView
-            android:id="@+id/qte"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/txtName"
-            android:layout_alignParentLeft="true"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_playlists"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            tools:listitem="@layout/card_seeds_home"
+            android:layout_alignParentBottom="true"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginLeft="193dp"
-            android:layout_marginEnd="136dp"
-            android:layout_marginRight="136dp"
-            android:layout_marginBottom="-141dp"
-            android:text="Qte en stock:" />
+            android:layout_alignParentRight="true">
+        </androidx.recyclerview.widget.RecyclerView>
     </RelativeLayout>
 
-</androidx.cardview.widget.CardView>
+</FrameLayout>
