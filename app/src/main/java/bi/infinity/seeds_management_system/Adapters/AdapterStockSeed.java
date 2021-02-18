@@ -1,5 +1,6 @@
 package bi.infinity.seeds_management_system.Adapters;
 
+
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,17 +13,19 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-import bi.infinity.seeds_management_system.Model.Seed;
+import bi.infinity.seeds_management_system.Model.Stock;
 import bi.infinity.seeds_management_system.R;
 
-public class AdapterSeedHome extends RecyclerView.Adapter<AdapterSeedHome.ViewHolder> {
+public class AdapterStockSeed extends RecyclerView.Adapter<AdapterStockSeed.ViewHolder> {
     private Context context;
-    ArrayList<Seed> seeds;
+    ArrayList<Stock> stocks;
 
-    public AdapterSeedHome(ArrayList<Seed> seeds, Context context) {
+
+    public AdapterStockSeed(ArrayList<Stock> stocks, Context context) {
         this.context = context;
-        this.seeds = seeds;
+        this.stocks = stocks;
     }
+
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_seeds_home, parent, false);
@@ -31,20 +34,20 @@ public class AdapterSeedHome extends RecyclerView.Adapter<AdapterSeedHome.ViewHo
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        Seed seed = (Seed) seeds.get(position);
-        holder.txt_detail_item_name.setText(seed.details);
-        holder.txt_seed_item_name.setText(seed.nom);
-        holder.txt_seed_item_owner.setText(seed.owner);
+        Stock stock = stocks.get(position);
+        holder.txt_detail_item_name.setText(stock.details);
+        holder.txt_seed_item_name.setText(stock.nom);
+        holder.txt_seed_item_owner.setText(stock.owner);
         //holder.img_seed.setText(seed.image);
     }
 
     @Override
     public int getItemCount() {
-        return seeds.size();
+        return stocks.size();
     }
 
-    public void setData(ArrayList<Seed> seeds) {
-        this.seeds = seeds;
+    public void setData(ArrayList<Stock> seeds) {
+        this.stocks = seeds;
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
