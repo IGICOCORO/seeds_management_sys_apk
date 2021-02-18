@@ -3,12 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.HomeFragment">
 
+    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="semences en stock"
+        android:text="Liste des semences en stock"
         android:textSize="10pt"
         android:textAllCaps="true"
         android:textColor="@color/colorPrimary"
@@ -18,15 +20,27 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycler_playlists"
+            android:id="@+id/recycler_seeds"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="40dp"
-            tools:listitem="@layout/card_seeds_home"
             android:layout_alignParentBottom="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true">
         </androidx.recyclerview.widget.RecyclerView>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fb_emission_add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="16dp"
+            android:contentDescription="@string/fab_content_desc"
+            app:srcCompat="@drawable/ic_add"
+            app:fabSize="auto"
+            tools:ignore="VectorDrawableCompat"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_alignParentEnd="true" />
     </RelativeLayout>
 
 </FrameLayout>

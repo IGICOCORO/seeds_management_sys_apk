@@ -12,7 +12,7 @@ public class LoginActivity extends Activity {
         setContentView(R.layout.activity_login);
     }
     public void performLogin(View view) {
-        Intent i = new Intent(LoginActivity.this, MainActivity.class);
+        Intent i = new Intent(LoginActivity.this, DashboardActivity.class);
         startActivity(i);
     }
 }

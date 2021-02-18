@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginBottom="5dp"
-    tools:context=".fragments.HomeFragment">
+    tools:context=".Fragments.HomeFragment">
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -31,7 +31,7 @@
                     android:text="semencier"
                     android:textSize="7pt"
                     android:textAllCaps="true"
-                    android:textColor="@color/design_default_color_primary_dark" />
+                    android:textColor="@color/colorPrimary" />
                 <TextView
                     android:id="@+id/txt_comment_time"
                     android:layout_width="wrap_content"
@@ -40,7 +40,7 @@
                     android:layout_marginLeft="10dp"
                     android:textSize="5pt"
                     android:textAllCaps="true"
-                    android:textColor="@color/design_default_color_primary_dark" />
+                    android:textColor="@color/colorPrimary" />
             </LinearLayout>
             <FrameLayout
                 android:layout_width="match_parent"

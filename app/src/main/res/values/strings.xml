@@ -4,4 +4,7 @@
     <string name="password">Password</string>
     <string name="username">Username</string>
     <string name="semences">semences</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fab_content_desc">btn_add_floating</string>
 </resources>
