@@ -7,10 +7,10 @@
     tools:context=".Fragments.HomeFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_categories"
+        android:id="@+id/recycler_seeds_item"
         android:layout_width="match_parent"
         android:layout_marginTop="15dp"
         android:layout_height="match_parent"
-        tools:listitem="@layout/home_item"
+        tools:listitem="@layout/card_seeds_home"
         tools:itemCount="4" />
 </FrameLayout>
