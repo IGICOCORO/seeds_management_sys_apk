@@ -18,18 +18,17 @@
         android:gravity="center_horizontal" />
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginTop="10pt">
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycler_seeds"
+            android:id="@+id/recycler_seeds_item"
             android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
             android:layout_height="match_parent"
-            android:layout_marginTop="40dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true">
-        </androidx.recyclerview.widget.RecyclerView>
+            tools:listitem="@layout/card_seeds_home"
+            tools:itemCount="4" />
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fb_emission_add"
+            android:id="@+id/fb_seed_add"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentBottom="true"
@@ -44,3 +43,5 @@
     </RelativeLayout>
 
 </FrameLayout>
+
+
