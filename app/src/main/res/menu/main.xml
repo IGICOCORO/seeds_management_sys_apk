@@ -4,13 +4,13 @@
     <item
         android:id="@+id/action_logout"
         android:orderInCategory="100"
-        android:title="Logout"
+        android:title="settings"
         app:showAsAction="never"
         android:enabled="true"/>
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
-        android:title="settings"
+        android:title="logout"
         app:showAsAction="never"
         android:enabled="true"/>
 </menu>
