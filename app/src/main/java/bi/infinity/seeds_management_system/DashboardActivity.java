@@ -1,6 +1,7 @@
 package bi.infinity.seeds_management_system;
 
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,8 +22,8 @@ public class DashboardActivity extends AppCompatActivity {
         viewPager.setAdapter(pageAdapter);
         tabHome.setupWithViewPager(viewPager);
 
-        tabHome.getTabAt(0).setText("Seeds");
-        tabHome.getTabAt(1).setText("Stock");
+        tabHome.getTabAt(0).setText("Seeds").setIcon(R.drawable.ic_home);
+        tabHome.getTabAt(1).setText("Stock").setIcon(R.drawable.ic_info);
 
     }
 
