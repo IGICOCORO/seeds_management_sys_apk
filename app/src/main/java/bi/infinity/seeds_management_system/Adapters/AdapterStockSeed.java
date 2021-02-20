@@ -39,6 +39,9 @@ public class AdapterStockSeed extends RecyclerView.Adapter<AdapterStockSeed.View
         holder.txt_seed_item_name.setText(stock.nom);
         holder.txt_seed_item_owner.setText(stock.owner);
         //holder.img_seed.setText(seed.image);
+
+
+
     }
 
     @Override
