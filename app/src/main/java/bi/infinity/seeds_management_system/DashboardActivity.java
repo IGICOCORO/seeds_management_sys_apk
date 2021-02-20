@@ -21,15 +21,15 @@ public class DashboardActivity extends AppCompatActivity {
         PageAdapter pageAdapter = new PageAdapter(getSupportFragmentManager());
 
         toolbar = findViewById(R.id.main_toolbar);
-        toolbar.setTitle("Seeds");
+        toolbar.setTitle("Semences");
         getSupportActionBar();
 
 
         viewPager.setAdapter(pageAdapter);
         tabHome.setupWithViewPager(viewPager);
 
-        tabHome.getTabAt(0).setText("Seeds").setIcon(R.drawable.ic_home);
-        tabHome.getTabAt(1).setText("Stock").setIcon(R.drawable.ic_info);
+        tabHome.getTabAt(0).setText("Semences").setIcon(R.drawable.ic_home);
+        tabHome.getTabAt(1).setText("Stock").setIcon(R.drawable.ic_store);
 
     }
 

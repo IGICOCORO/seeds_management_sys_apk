@@ -69,7 +69,7 @@ public class SeedsFragment extends Fragment {
     }
 
     private void getStock() {
-        Stock stock = new Stock("umuceri","sans","Details du semence", "Nitrains", "2000", "60");
+        Stock stock = new Stock("ibigori","sans","Details du semence", "Nitrains", "2000", "60");
         stocks.add(stock);
         stocks.add(stock);
         stocks.add(stock);
