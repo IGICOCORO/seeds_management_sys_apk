@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/txt_settings_lang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/language" />
+
+    <ToggleButton
+        android:id="@+id/radio_en"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:textOff="@string/english"
+        android:textOn="@string/english_selected" />
+
+    <ToggleButton
+        android:id="@+id/radio_fr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textOff="@string/francais"
+        android:textOn="@string/fran_ais_sectionn"/>
+
+    <ToggleButton
+        android:id="@+id/radio_rw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textOff="@string/ikinyarwanda"
+        android:textOn="@string/mwahisemwo_ikinyarwanda"/>
+
+    <ToggleButton
+        android:id="@+id/radio_run"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textOff="@string/ikirundi"
+        android:textOn="@string/mwahisemwo_ikirundi"/>
+
+</LinearLayout>
