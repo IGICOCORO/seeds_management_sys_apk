@@ -1,13 +1,15 @@
 package bi.infinity.seeds_management_system;
 
 
-import android.os.Build;
+
+import android.content.ClipData;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.SearchView;
 
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager.widget.ViewPager;
@@ -38,38 +40,19 @@ public class DashboardActivity extends AppCompatActivity {
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        super.onCreateOptionsMenu(menu);
-        getMenuInflater().inflate(R.menu.main,menu);
-        searchBar= findViewById(R.id.menu_search);
-        searchBar.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                searchBar.setIconified(false);
-            }
-        });
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.action_logout) {
+            logout();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 
-        searchBar.setOnQueryTextFocusChangeListener(new View.OnFocusChangeListener()
-        {
-            @Override
-            public void onFocusChange(View view, boolean b)
-            {
-                if(!b)
-                {
-                    if(searchBar.getQuery().toString().length() < 1)
-                    {
-                        searchBar.setIconified(true); //close the search editor and make search icon again
-                    }
-
-                    searchBar.clearFocus();
-
-                }
-            }
-        });
-        return true ;
+    private void logout() {
+       finish();
 
     }
+
 
 }

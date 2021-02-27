@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">Seeds</string>
-    <string name="login">login</string>
-    <string name="password">Password</string>
-    <string name="username">Username</string>
-    <string name="semences">semences</string>
+    <string name="app_name" translatable="false">Seeds</string>
+    <string name="login" translatable="false">login</string>
+    <string name="password" translatable="false">Password</string>
+    <string name="username" translatable="false">Username</string>
+    <string name="semences" translatable="false">semences</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
     <string name="fab_content_desc">btn_add_floating</string>
 </resources>

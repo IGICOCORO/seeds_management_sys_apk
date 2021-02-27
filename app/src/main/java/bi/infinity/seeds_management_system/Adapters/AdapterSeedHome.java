@@ -1,6 +1,7 @@
 package bi.infinity.seeds_management_system.Adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
+import bi.infinity.seeds_management_system.DatailsActivity;
 import bi.infinity.seeds_management_system.Model.Seed;
 import bi.infinity.seeds_management_system.R;
 
@@ -36,6 +38,14 @@ public class AdapterSeedHome extends RecyclerView.Adapter<AdapterSeedHome.ViewHo
         holder.txt_seed_item_name.setText(seed.nom);
         holder.txt_seed_item_owner.setText(seed.owner);
         //holder.img_seed.setText(seed.image);
+
+        holder.view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(context, DatailsActivity.class);
+                context.startActivity(i);
+            }
+        });
     }
 
     @Override

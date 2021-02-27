@@ -12,15 +12,15 @@
         app:actionViewClass="androidx.appcompat.widget.SearchView" />
 
     <item
-        android:id="@+id/action_logout"
+        android:id="@+id/action_settings"
         android:orderInCategory="100"
         android:title="settings"
         app:showAsAction="never"
         android:enabled="true"/>
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/action_logout"
         android:orderInCategory="100"
-        android:title="logout"
+        android:title="Logout"
         app:showAsAction="never"
         android:enabled="true"/>
 </menu>
