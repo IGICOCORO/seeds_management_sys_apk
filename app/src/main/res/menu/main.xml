@@ -8,7 +8,8 @@
         android:icon="@drawable/ic_search"
         android:title="Rechercher"
         android:actionLayout="@layout/searchbar_layout"
-        app:showAsAction="always"/>
+        app:showAsAction="ifRoom"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
 
     <item
         android:id="@+id/action_logout"

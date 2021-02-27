@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SearchView
+<androidx.appcompat.widget.SearchView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:iconifiedByDefault="false"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:clickable="true"
-    android:click="onClick"
-    android:layout_marginTop="7dp"
     android:layout_marginLeft="7dp"
+    android:layout_marginTop="7dp"
     android:layout_marginRight="7dp"
     android:layout_marginBottom="7dp"
-    android:background="@color/colorPrimary">
-
-</SearchView>
+    android:background="@color/colorPrimary"
+    android:onClick="onClick"
+    android:clickable="true"
+    android:focusable="true" />
