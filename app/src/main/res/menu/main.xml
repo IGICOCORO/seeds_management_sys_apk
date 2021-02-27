@@ -7,7 +7,8 @@
         android:id="@+id/menu_search"
         android:icon="@drawable/ic_search"
         android:title="Rechercher"
-        app:showAsAction="always" />
+        android:actionLayout="@layout/searchbar_layout"
+        app:showAsAction="always"/>
 
     <item
         android:id="@+id/action_logout"
