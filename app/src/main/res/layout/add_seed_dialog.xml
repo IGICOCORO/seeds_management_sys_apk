@@ -7,7 +7,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="20pt"
-        android:text="Ajouter en Stock"
+        android:text="@string/ajouter_en_stock"
         android:textSize="30dp"
         android:textAlignment="center"
         android:gravity="center_horizontal" />
@@ -21,7 +21,7 @@
             android:layout_height="60dp"
             android:drawableRight="@drawable/ic_edit"
             android:focusedByDefault="true"
-            android:hint="Nom du produit" />
+            android:hint="@string/nom_du_produit" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -35,7 +35,7 @@
             android:layout_height="60dp"
             android:drawableRight="@drawable/ic_edit"
             android:focusedByDefault="true"
-            android:hint="quantité" />
+            android:hint="@string/quantite" />
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -49,7 +49,7 @@
             android:drawableRight="@drawable/ic_money"
             android:inputType="number"
             android:focusedByDefault="true"
-            android:hint="Prix" />
+            android:hint="@string/prix" />
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -62,7 +62,7 @@
             android:layout_height="60dp"
             android:drawableRight="@drawable/ic_company_business"
             android:focusedByDefault="true"
-            android:hint="Company" />
+            android:hint="@string/company" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -75,7 +75,7 @@
             android:inputType="datetime"
             android:drawableRight="@drawable/ic_date"
             android:focusedByDefault="true"
-            android:hint="Date" />
+            android:hint="@string/date" />
     </com.google.android.material.textfield.TextInputLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -84,7 +84,7 @@
             android:id="@+id/btn_seed_cancel"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
-            android:text="annuler"
+            android:text="@string/annuler"
             android:textColor="#228B22"
             android:padding="0dp"
             style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
@@ -94,7 +94,7 @@
             android:layout_height="36dp"
             android:layout_alignParentRight="true"
             android:background="@drawable/material_button"
-            android:text="Ajouter"
+            android:text="@string/ajouter"
             android:textColor="#fff"
             android:layout_alignParentEnd="true" />
     </RelativeLayout>

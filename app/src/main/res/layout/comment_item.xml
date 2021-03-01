@@ -14,7 +14,8 @@
             android:layout_height="60dp"
             android:src="@drawable/ic_user"
             android:layout_marginTop="10dp"
-            android:layout_marginLeft="5dp"/>
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp" />
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
@@ -28,7 +29,7 @@
                     android:id="@+id/txt_comment_user"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="semencier"
+                    android:text="@string/semencier"
                     android:textSize="7pt"
                     android:textAllCaps="true"
                     android:textColor="@color/colorPrimary" />
@@ -40,7 +41,8 @@
                     android:layout_marginLeft="10dp"
                     android:textSize="5pt"
                     android:textAllCaps="true"
-                    android:textColor="@color/colorPrimary" />
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginStart="10dp" />
             </LinearLayout>
             <FrameLayout
                 android:layout_width="match_parent"
@@ -50,7 +52,7 @@
                 android:id="@+id/txt_comment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
+                android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipisicing_elit_sed_do_eiusmod_tempor_incididunt_ut_labore_et_dolore_magna_aliqua"/>
         </LinearLayout>
     </LinearLayout>
 </androidx.cardview.widget.CardView>

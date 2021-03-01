@@ -1,10 +1,36 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name" translatable="false">Seeds</string>
     <string name="login" translatable="false">login</string>
     <string name="password" translatable="false">Password</string>
-    <string name="username" translatable="false">Username</string>
     <string name="semences" translatable="false">semences</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
-    <string name="fab_content_desc">btn_add_floating</string>
+    <string name="fab_content_desc" translatable="false">btn_add_floating</string>
+    <string name="semence"  translatable="false"> Semence</string>
+    <string name="username"  translatable="false">username</string>
+    <string name="language"  translatable="false">language</string>
+    <string name="english"  translatable="false">english</string>
+    <string name="english_selected"  translatable="false">english_selected</string>
+    <string name="francais" translatable="false">français</string>
+    <string name="fran_ais_sectionn"  translatable="false">francais_selection</string>
+    <string name="ikirundi" translatable="false">ikirundi</string>
+    <string name="mwahisemwo_ikirundi"  translatable="false">mwahisemwo_ikirundi</string>
+    <string name="ajouter_en_stock"  translatable="false">Ajouter en Stock</string>
+    <string name="nom_du_produit"  translatable="false">Nom du produit</string>
+    <string name="umuceri" translatable="false">Umuceri</string>
+    <string name="le_riz_est_une_c_r_ale_de_la_famille_des_poac_es_anciennement_gramin_es_cultiv_e_dans_les_r_gions_tropicales_subtropicales_et_temp_r_es_chaudes_pour_son" translatable="false">Le riz est une céréale de la famille des Poacées (anciennement graminées), cultivée dans les régions tropicales, subtropicales et tempérées chaudes pour son ...</string>
+    <string name="by_nitrains" translatable="false">by Nitrains</string>
+    <string name="semencier" translatable="false">semencier</string>
+    <string name="lorem_ipsum_dolor_sit_amet_consectetur_adipisicing_elit_sed_do_eiusmod_tempor_incididunt_ut_labore_et_dolore_magna_aliqua" translatable="false">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="details_du_semence" translatable="false">Details du semence:</string>
+    <string name="le_lorem_ipsum_est_en_imprimerie_une_suite_de_mots_sans_signification_utilis_e_titre_provisoire_pour_calibrer_une_mise_en_page_le_texte_d_finitif_venant_remplacer_le_faux_texte_d_s_qu_il_est_pr_t_ou_que_la_mise_en_page_est_achev_e_g_n_ralement_on_utilise_un_texte_en_faux_latin_le_lorem_ipsum_ou_lipsum" translatable="false">Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu\'il est prêt ou que la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum.</string>
+    <string name="prix_1200fbu" translatable="false">Prix: 1200FBU</string>
+    <string name="vendre" translatable="false">Vendre</string>
+    <string name="nom_et_prenom_du_client" translatable="false">Nom et prenom du client</string>
+    <string name="quantite" translatable="false">quantité</string>
+    <string name="prix" translatable="false">Prix</string>
+    <string name="t_lephone_du_client" translatable="false">Télephone du client</string>
+    <string name="date" translatable="false">Date</string>
+    <string name="annuler" translatable="false">annuler</string>
+    <string name="ajouter" translatable="false">Ajouter</string>
+    <string name="company" translatable="false">Company</string>
 </resources>

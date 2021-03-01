@@ -37,7 +37,7 @@
                     android:layout_height="60dp"
                     android:drawableRight="@drawable/ic_user"
                     android:focusedByDefault="true"
-                    android:hint="Username" />
+                    android:hint="@string/username" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout

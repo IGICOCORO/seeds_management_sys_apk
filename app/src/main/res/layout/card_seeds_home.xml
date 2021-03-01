@@ -29,16 +29,16 @@
                     android:id="@+id/txt_seed_item_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Umuceri"
+                    android:text="@string/umuceri"
                     android:singleLine="true"
-                    android:textSize="30dp"
+                    android:textSize="30sp"
                     android:textColor="#333"/>
                 <TextView
                     android:id="@+id/txt_detail_item_name"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:text="Le riz est une céréale de la famille des Poacées (anciennement graminées), cultivée dans les régions tropicales, subtropicales et tempérées chaudes pour son ..."
+                    android:text="@string/le_riz_est_une_c_r_ale_de_la_famille_des_poac_es_anciennement_gramin_es_cultiv_e_dans_les_r_gions_tropicales_subtropicales_et_temp_r_es_chaudes_pour_son"
                     android:textSize="9pt"
                     android:textColor="#333"/>
             </LinearLayout>
@@ -46,7 +46,7 @@
                 android:id="@+id/txt_seed_item_owner"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="by Nitrains"
+                android:text="@string/by_nitrains"
                 android:background="#fff"
                 android:elevation="5dp"
                 android:layout_margin="5dp"
