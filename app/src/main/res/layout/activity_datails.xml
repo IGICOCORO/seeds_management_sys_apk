@@ -12,38 +12,50 @@
             android:id="@+id/seeds_img"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@mipmap/riz"/>
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/riz"
+            android:layout_marginStart="5dp" />
         <TextView
             android:id="@+id/details_seed"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Details du semence : Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum."/>
+            android:layout_marginLeft="5dp"
+            android:text="Details du semence : Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum."
+            android:layout_marginStart="5dp" />
         <TextView
             android:id="@+id/categorie_seed"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Catégories: Cerifiés"/>
+            android:layout_marginLeft="5dp"
+            android:text="Catégories: Cerifiés"
+            android:layout_marginStart="5dp" />
         <TextView
             android:id="@+id/origine_seed"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Province d'origine: Bubanza"/>
+            android:layout_marginLeft="5dp"
+            android:text="Province d'origine: Bubanza"
+            android:layout_marginStart="5dp" />
         <TextView
             android:id="@+id/proprietaire_seed"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Owner : Nitrains"/>
+            android:layout_marginLeft="5dp"
+            android:text="Owner : Nitrains"
+            android:layout_marginStart="5dp" />
         <TextView
             android:id="@+id/contact_proprietaire_seed"
             android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
             android:layout_height="wrap_content"
             android:text="Contact du Propriètaire: +25779533729"
-            />
+            android:layout_marginStart="5dp" />
         <RatingBar
             android:id="@+id/rating_seed"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:numStars="5"/>
+            android:numStars="5"
+            android:rating="4.5"/>
 
     </LinearLayout>
 

@@ -2,6 +2,7 @@ package bi.infinity.seeds_management_system.Adapters;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
+import bi.infinity.seeds_management_system.DatailsActivity;
 import bi.infinity.seeds_management_system.Model.Stock;
 import bi.infinity.seeds_management_system.R;
 
@@ -39,6 +41,13 @@ public class AdapterStockSeed extends RecyclerView.Adapter<AdapterStockSeed.View
         holder.txt_seed_item_name.setText(stock.nom);
         holder.txt_seed_item_owner.setText(stock.owner);
         //holder.img_seed.setText(seed.image);
+        holder.view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(context, DatailsActivity.class);
+                context.startActivity(i);
+            }
+        });
 
 
 

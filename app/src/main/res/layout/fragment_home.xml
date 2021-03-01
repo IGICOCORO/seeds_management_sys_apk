@@ -9,7 +9,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_seeds_item"
         android:layout_width="match_parent"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="55dp"
         android:layout_height="match_parent"
         tools:listitem="@layout/card_seeds_home"
         tools:itemCount="4" />
