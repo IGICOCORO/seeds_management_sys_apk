@@ -1,4 +1,4 @@
-<androidx.constraintlayout.widget.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -12,7 +12,7 @@
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_centerInParent="true"
-        android:src="@mipmap/playstore"
+        android:src="@drawable/ic_seedcolor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,7 +25,7 @@
         android:layout_below="@+id/logo_id"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:text="Semences"
+        android:text="Semence"
         android:textColor="@color/cardview_dark_background"
         android:textSize="40dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,4 +34,4 @@
         app:layout_constraintTop_toBottomOf="@+id/logo_id"
         tools:ignore="MissingConstraints" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
