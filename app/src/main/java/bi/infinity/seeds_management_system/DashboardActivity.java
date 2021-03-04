@@ -4,10 +4,8 @@ package bi.infinity.seeds_management_system;
 
 import android.content.ClipData;
 import android.os.Bundle;
-import android.view.Menu;
+
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 import android.widget.SearchView;
 
 import androidx.appcompat.app.AppCompatActivity;
