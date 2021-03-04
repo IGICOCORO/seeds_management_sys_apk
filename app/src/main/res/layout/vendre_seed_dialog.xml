@@ -55,7 +55,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="8pt"
-        android:text="Semences"/>
+        android:text="@string/semences"/>
     <Spinner
         android:id="@+id/combo_emission_category"
         android:layout_width="match_parent"
@@ -81,11 +81,11 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <DatePicker
+        <EditText
             android:id="@+id/field_seed_date"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:background="#fff"
+            android:background="#ffffff"
             android:inputType="datetime"
             android:drawableRight="@drawable/ic_date"
             android:focusedByDefault="true"
