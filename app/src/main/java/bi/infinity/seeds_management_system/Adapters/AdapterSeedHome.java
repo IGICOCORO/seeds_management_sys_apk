@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-import bi.infinity.seeds_management_system.DatailsActivity;
+import bi.infinity.seeds_management_system.DetailsActivity;
 import bi.infinity.seeds_management_system.Model.Seed;
 import bi.infinity.seeds_management_system.R;
 
@@ -33,7 +33,7 @@ public class AdapterSeedHome extends RecyclerView.Adapter<AdapterSeedHome.ViewHo
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        Seed seed = (Seed) seeds.get(position);
+        Seed seed =  seeds.get(position);
         holder.txt_detail_item_name.setText(seed.details);
         holder.txt_seed_item_name.setText(seed.nom);
         holder.txt_seed_item_owner.setText(seed.owner);
@@ -42,8 +42,8 @@ public class AdapterSeedHome extends RecyclerView.Adapter<AdapterSeedHome.ViewHo
         holder.view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(context, DatailsActivity.class);
-                context.startActivity(i);
+                Intent i = new Intent(context, DetailsActivity.class);
+               context.startActivity(i);
             }
         });
     }

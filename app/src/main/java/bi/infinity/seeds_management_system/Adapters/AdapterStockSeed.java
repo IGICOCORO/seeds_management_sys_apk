@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-import bi.infinity.seeds_management_system.DatailsActivity;
+import bi.infinity.seeds_management_system.VendreActivity;
 import bi.infinity.seeds_management_system.Model.Stock;
 import bi.infinity.seeds_management_system.R;
 
@@ -44,7 +44,7 @@ public class AdapterStockSeed extends RecyclerView.Adapter<AdapterStockSeed.View
         holder.view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(context, DatailsActivity.class);
+                Intent i = new Intent(context, VendreActivity.class);
                 context.startActivity(i);
             }
         });

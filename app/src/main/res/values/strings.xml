@@ -5,17 +5,17 @@
     <string name="semences" translatable="false">semences</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="fab_content_desc" translatable="false">btn_add_floating</string>
-    <string name="semence"  translatable="false"> Semence</string>
-    <string name="username"  translatable="false">username</string>
-    <string name="language"  translatable="false">language</string>
-    <string name="english"  translatable="false">english</string>
-    <string name="english_selected"  translatable="false">english_selected</string>
+    <string name="semence" translatable="false"> Semence</string>
+    <string name="username" translatable="false">username</string>
+    <string name="language" translatable="false">language</string>
+    <string name="english" translatable="false">english</string>
+    <string name="english_selected" translatable="false">english_selected</string>
     <string name="francais" translatable="false">français</string>
-    <string name="fran_ais_sectionn"  translatable="false">francais_selection</string>
+    <string name="fran_ais_sectionn" translatable="false">francais_selection</string>
     <string name="ikirundi" translatable="false">ikirundi</string>
-    <string name="mwahisemwo_ikirundi"  translatable="false">mwahisemwo_ikirundi</string>
-    <string name="ajouter_en_stock"  translatable="false">Ajouter en Stock</string>
-    <string name="nom_du_produit"  translatable="false">Nom du produit</string>
+    <string name="mwahisemwo_ikirundi" translatable="false">mwahisemwo_ikirundi</string>
+    <string name="ajouter_en_stock" translatable="false">Ajouter en Stock</string>
+    <string name="nom_du_produit" translatable="false">Nom du produit</string>
     <string name="umuceri" translatable="false">Umuceri</string>
     <string name="le_riz_est_une_c_r_ale_de_la_famille_des_poac_es_anciennement_gramin_es_cultiv_e_dans_les_r_gions_tropicales_subtropicales_et_temp_r_es_chaudes_pour_son" translatable="false">Le riz est une céréale de la famille des Poacées (anciennement graminées), cultivée dans les régions tropicales, subtropicales et tempérées chaudes pour son ...</string>
     <string name="by_nitrains" translatable="false">by Nitrains</string>
@@ -33,4 +33,6 @@
     <string name="annuler" translatable="false">annuler</string>
     <string name="ajouter" translatable="false">Ajouter</string>
     <string name="company" translatable="false">Company</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

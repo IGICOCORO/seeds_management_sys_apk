@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -29,24 +30,21 @@ public class SeedsFragment extends Fragment {
     private FloatingActionButton fb_seed_add;
     private ArrayList<Stock> stocks;
 
-    public SeedsFragment(RecyclerView recycler_seeds, ArrayList<Stock> stocks, FloatingActionButton fb_emission_add, AdapterStockSeed adapter) {
-        this.recycler_seeds = recycler_seeds;
-        this.stocks = stocks;
-        this.fb_seed_add = fb_seed_add;
-        this.adapter = adapter;
-    }
+    Button btn_vente;
+
 
     public SeedsFragment() {
 
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(LayoutInflater     inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_seeds, container, false);
 
         fb_seed_add = view.findViewById(R.id.fb_seed_add);
+        btn_vente = view.findViewById(R.id.btn_vente);
 
         recycler_seeds = view.findViewById(R.id.recycler_seeds_item);
         recycler_seeds.setLayoutManager(new GridLayoutManager(getContext(),1));
@@ -64,6 +62,7 @@ public class SeedsFragment extends Fragment {
                 new AddSeedDialog(getContext()).show();
             }
         });
+
         getStock();
         return  view;
     }
