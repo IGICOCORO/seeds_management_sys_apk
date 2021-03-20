@@ -16,6 +16,7 @@ public class VenteDialog extends Dialog {
     EditText field_seed_nom, field_seed_date, field_seed_company_from, field_seed_prix,field_seed_qtt;
     Button btn_add_seed;
 
+
     public VenteDialog(Context context) {
         super(context, Theme_AppCompat_DayNight_Dialog);
         setContentView(R.layout.vendre_seed_dialog);

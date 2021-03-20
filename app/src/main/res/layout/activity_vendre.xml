@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".DetailsActivity">
+    tools:context=".VendreActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -50,13 +51,17 @@
             android:layout_height="wrap_content"
             android:text="Contact du Propriètaire: +25779533729"
             android:layout_marginStart="5dp" />
-        <RatingBar
-            android:id="@+id/rating_seed"
-            android:layout_width="245dp"
-            android:layout_height="wrap_content"
-            android:numStars="5"
-            android:rating="4.5"/>
+
+        <Button
+            android:id="@+id/btn_vente"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/material_button"
+            android:layout_marginTop="20dp"
+            android:text="vendre"
+            android:textColor="#fff"/>
+
 
     </LinearLayout>
 
-</RelativeLayout>
+</FrameLayout>

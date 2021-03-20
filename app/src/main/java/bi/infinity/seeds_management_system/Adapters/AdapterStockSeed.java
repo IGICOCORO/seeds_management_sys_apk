@@ -14,9 +14,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-import bi.infinity.seeds_management_system.VendreActivity;
 import bi.infinity.seeds_management_system.Model.Stock;
 import bi.infinity.seeds_management_system.R;
+import bi.infinity.seeds_management_system.VendreActivity;
 
 public class AdapterStockSeed extends RecyclerView.Adapter<AdapterStockSeed.ViewHolder> {
     private Context context;

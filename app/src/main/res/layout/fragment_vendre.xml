@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.VendreFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/seeds_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/riz"
+                android:layout_marginStart="5dp" />
+            <TextView
+                android:id="@+id/details_seed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Details du semence : Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum."
+                android:layout_marginStart="5dp" />
+            <TextView
+                android:id="@+id/categorie_seed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Catégories: Cerifiés"
+                android:layout_marginStart="5dp" />
+            <TextView
+                android:id="@+id/origine_seed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Province d'origine: Bubanza"
+                android:layout_marginStart="5dp" />
+            <TextView
+                android:id="@+id/proprietaire_seed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Owner : Nitrains"
+                android:layout_marginStart="5dp" />
+            <TextView
+                android:id="@+id/contact_proprietaire_seed"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+                android:text="Contact du Propriètaire: +25779533729"
+                android:layout_marginStart="5dp" />
+
+            <Button
+                android:id="@+id/btn_vente"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/material_button"
+                android:layout_marginTop="20dp"
+                android:text="vendre"
+                android:textColor="#fff" />
+
+
+        </LinearLayout>
+
+</FrameLayout>
