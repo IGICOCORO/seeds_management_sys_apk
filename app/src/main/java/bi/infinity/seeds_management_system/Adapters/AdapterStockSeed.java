@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
+import bi.infinity.seeds_management_system.Model.Seed;
 import bi.infinity.seeds_management_system.Model.Stock;
 import bi.infinity.seeds_management_system.R;
 import bi.infinity.seeds_management_system.VendreActivity;
@@ -58,7 +59,7 @@ public class AdapterStockSeed extends RecyclerView.Adapter<AdapterStockSeed.View
         return stocks.size();
     }
 
-    public void setData(ArrayList<Stock> seeds) {
+    public void setData(Seed seeds) {
         this.stocks = seeds;
     }
 

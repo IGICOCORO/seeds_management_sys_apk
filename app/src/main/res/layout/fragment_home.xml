@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Fragments.HomeFragment">
 
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_seeds_item"
         android:layout_width="match_parent"
