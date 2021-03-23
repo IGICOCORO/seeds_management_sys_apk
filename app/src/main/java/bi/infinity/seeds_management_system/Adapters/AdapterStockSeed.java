@@ -12,9 +12,10 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.ArrayList;
 
-import bi.infinity.seeds_management_system.Model.Seed;
 import bi.infinity.seeds_management_system.Model.Stock;
 import bi.infinity.seeds_management_system.R;
 import bi.infinity.seeds_management_system.VendreActivity;
@@ -38,10 +39,14 @@ public class AdapterStockSeed extends RecyclerView.Adapter<AdapterStockSeed.View
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Stock stock = stocks.get(position);
-        holder.txt_detail_item_name.setText(stock.details);
-        holder.txt_seed_item_name.setText(stock.nom);
-        holder.txt_seed_item_owner.setText(stock.owner);
-        //holder.img_seed.setText(seed.image);
+        holder.txt_detail_item_name.setText(stock.getDetails());
+        holder.txt_seed_item_name.setText(stock.getNom());
+        holder.txt_seed_item_owner.setText(stock.getOwner());
+       // holder.txt_seed_item_owner.setText(stock.getPrix());
+        //holder.txt_seed_item_owner.setText(stock.getQtt());
+        Picasso.get().load(stocks.get(position).getImage()).into(holder.img_seed);
+
+
         holder.view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,8 +64,8 @@ public class AdapterStockSeed extends RecyclerView.Adapter<AdapterStockSeed.View
         return stocks.size();
     }
 
-    public void setData(Seed seeds) {
-        this.stocks = seeds;
+    public void setData(ArrayList<Stock> seeds) {
+        this.stocks = stocks;
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {

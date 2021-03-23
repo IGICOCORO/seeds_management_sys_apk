@@ -40,7 +40,7 @@ public class HomeFragment extends Fragment {
     }
 
     private void getSeeds() {
-       Seed seed = new Seed("Riz","sans","Details du semence", "Nitrains", "2000", "60");
+       Seed seed = new Seed("Riz","sans","Details du semence", "Nitrains",2000, "60");
        seeds.add(seed);
        seeds.add(seed);
        seeds.add(seed);

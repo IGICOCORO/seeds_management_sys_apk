@@ -43,7 +43,7 @@ public class AdapterSeedHome extends RecyclerView.Adapter<AdapterSeedHome.ViewHo
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(context, DetailsActivity.class);
-               context.startActivity(i);
+                context.startActivity(i);
             }
         });
     }
