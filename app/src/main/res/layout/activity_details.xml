@@ -13,6 +13,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:elevation="5dp"
             android:src="@mipmap/riz"
             android:layout_marginStart="5dp" />
         <TextView
@@ -20,6 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
+            android:elevation="3pt"
             android:text="Details du semence : Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum."
             android:layout_marginStart="5dp" />
         <TextView
@@ -55,6 +58,7 @@
             android:layout_width="245dp"
             android:layout_height="wrap_content"
             android:numStars="5"
+            android:layout_gravity="center"
             android:rating="4.5"/>
 
     </LinearLayout>

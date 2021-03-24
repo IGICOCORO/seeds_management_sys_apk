@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Imivyaro</string>
-    <string name="umuceri">Umuceri</string>
+    <string name="app_name" translatable="false">imivyaro</string>
+    <string name="login" translatable="false">kwikonegita</string>
+    <string name="password" translatable="false">urufunguruza</string>
+    <string name="semences" translatable="false">imivyaro</string>
 </resources>

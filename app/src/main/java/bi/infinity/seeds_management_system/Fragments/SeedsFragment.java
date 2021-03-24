@@ -89,15 +89,15 @@ public class SeedsFragment extends Fragment {
         String url = urlBuilder.build().toString();
         Request request = new Request.Builder()
                 .url(url)
-               // .header("Authorization", "Bearer "+ Host.getSessionValue(context, "token"))
+                //.header("Authorization", "Bearer "+ Host.getSessionValue(context, "token"))
                 .build();
         client.newCall(request).enqueue(new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
                 Log.i("======JSON====",e.getMessage());
-                //getActivity().runOnUiThread(() -> {
-                 //   Toast.makeText(context, "you are offline", Toast.LENGTH_SHORT).show();
-                //});
+                getActivity().runOnUiThread(() -> {
+                    Toast.makeText(context, "you are offline", Toast.LENGTH_SHORT).show();
+                });
             }
             @Override
             public void onResponse(Call call, Response response) throws IOException {
@@ -107,14 +107,16 @@ public class SeedsFragment extends Fragment {
                     Stock stock;
                     for (int i = 0; i<results.length(); i++) {
                         JSONObject item = results.getJSONObject(i);
+
                         stock = new Stock(
                                 item.getString("nom"),
                                 item.getString("photo"),
                                 item.getString("etat_sanitaire"),
                                 item.getString("variety")
+
                         );
+                        Log.i("=========item======", response.message());
                         stocks.add(stock);
-                        Log.i("======JSON====",stock.toString());
 
 
                     }
@@ -125,9 +127,9 @@ public class SeedsFragment extends Fragment {
 
                 } catch (JSONException e) {
                     e.printStackTrace();
-                    Log.i("======JSON====",e.getMessage());
+                    //Log.i("======JSON====",e.getMessage());
                     getActivity().runOnUiThread(() -> {
-                       // Toast.makeText(context, "format incorrect", Toast.LENGTH_SHORT).show();
+                      //  Toast.makeText(context, "format incorrect", Toast.LENGTH_SHORT).show();
                     });
                 }
             }
