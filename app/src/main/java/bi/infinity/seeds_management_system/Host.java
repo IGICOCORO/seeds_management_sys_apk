@@ -25,7 +25,7 @@ import okhttp3.Response;
 public class Host {
      //public static String URL = "http://192.168.1.2:80";
 //    public static String URL = "https://seed.hogi.bi";
-    public static String URL = "http://192.168.43.131:8000";
+    public static String URL = "http://192.168.1.103:8000";
    // private static SharedPreferences sessionPreference;
 
    // public static boolean isLogedIn(Context context){

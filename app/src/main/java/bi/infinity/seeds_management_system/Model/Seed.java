@@ -4,13 +4,25 @@ public class Seed {
     public String nom, image, details,owner,qtt;
     public Integer prix;
 
-    public Seed(String nom, String image, String details, String owner, Integer prix, String qtt) {
+    public Seed(String nom, String image, String details, String owner) {
         this.nom = nom;
         this.image = image;
         this.details = details;
         this.owner = owner;
         this.prix = prix;
         this.qtt = qtt;
+    }
+
+    @Override
+    public String toString() {
+        return "Seed{" +
+                "nom='" + nom + '\'' +
+                ", image='" + image + '\'' +
+                ", details='" + details + '\'' +
+                ", owner='" + owner + '\'' +
+                ", qtt='" + qtt + '\'' +
+                ", prix=" + prix +
+                '}';
     }
 
     public String getNom() {
