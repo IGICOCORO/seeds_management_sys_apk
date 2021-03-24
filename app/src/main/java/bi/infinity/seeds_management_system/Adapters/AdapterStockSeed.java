@@ -12,7 +12,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.squareup.picasso.Picasso;
+import com.bumptech.glide.Glide;
+
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 
@@ -30,6 +32,7 @@ public class AdapterStockSeed extends RecyclerView.Adapter<AdapterStockSeed.View
         this.stocks = stocks;
     }
 
+    @NotNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_seeds_home, parent, false);
@@ -37,15 +40,12 @@ public class AdapterStockSeed extends RecyclerView.Adapter<AdapterStockSeed.View
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull  ViewHolder holder, int position) {
         Stock stock = stocks.get(position);
         holder.txt_detail_item_name.setText(stock.getDetails());
+        Glide.with(context).load(stock.getImage()).into(holder.img_seed);
         holder.txt_seed_item_name.setText(stock.getNom());
         holder.txt_seed_item_owner.setText(stock.getOwner());
-       // holder.txt_seed_item_owner.setText(stock.getPrix());
-        //holder.txt_seed_item_owner.setText(stock.getQtt());
-        Picasso.get().load(stocks.get(position).getImage()).into(holder.img_seed);
-
 
         holder.view.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,9 +54,6 @@ public class AdapterStockSeed extends RecyclerView.Adapter<AdapterStockSeed.View
                 context.startActivity(i);
             }
         });
-
-
-
     }
 
     @Override
@@ -68,7 +65,7 @@ public class AdapterStockSeed extends RecyclerView.Adapter<AdapterStockSeed.View
         this.stocks = stocks;
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder {
         View view;
         TextView txt_detail_item_name ,txt_seed_item_name,txt_seed_item_owner ;
         ImageView img_seed;

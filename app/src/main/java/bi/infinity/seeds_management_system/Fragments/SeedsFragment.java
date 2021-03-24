@@ -49,8 +49,8 @@ public class SeedsFragment extends Fragment {
     private Context context;
 
 
-    public SeedsFragment() {
-
+    public SeedsFragment(Context context) {
+        this.context=context;
     }
 
     @Override
@@ -80,14 +80,12 @@ public class SeedsFragment extends Fragment {
 
         });
         fetchStock();
-        Log.i("Objects","========================================");
         return  view;
     }
     public void fetchStock() {
 
         OkHttpClient client = new OkHttpClient();
-        HttpUrl.Builder urlBuilder = HttpUrl.parse(Host.URL + "/semences/").newBuilder();
-
+        HttpUrl.Builder urlBuilder = HttpUrl.parse(Host.URL + "/stock/").newBuilder();
         String url = urlBuilder.build().toString();
         Request request = new Request.Builder()
                 .url(url)
@@ -96,37 +94,38 @@ public class SeedsFragment extends Fragment {
         client.newCall(request).enqueue(new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
-                getActivity().runOnUiThread(() -> {
-                    Toast.makeText(context, "you are offline", Toast.LENGTH_SHORT).show();
-                });
+                Log.i("======JSON====",e.getMessage());
+                //getActivity().runOnUiThread(() -> {
+                 //   Toast.makeText(context, "you are offline", Toast.LENGTH_SHORT).show();
+                //});
             }
             @Override
             public void onResponse(Call call, Response response) throws IOException {
                 String json = response.body().string();
-                JSONObject jsonObject = null;
                 try {
-                    jsonObject = new JSONObject(json);
-                    JSONArray results = new JSONArray(jsonObject.getString("results"));
+                    JSONArray results = new JSONArray(json);
                     Stock stock;
-                    for (int i=0; i<results.length(); i++) {
+                    for (int i = 0; i<results.length(); i++) {
                         JSONObject item = results.getJSONObject(i);
                         stock = new Stock(
                                 item.getString("nom"),
-                                item.getString("image"),
-                                item.getString("details"),
-                                item.getString("owner")
-                                //item.getInt("prix"),
-                                //item.getString("qtt")
+                                item.getString("photo"),
+                                item.getString("etat_sanitaire"),
+                                item.getString("variety")
                         );
                         stocks.add(stock);
+                        Log.i("======JSON====",stock.toString());
+
 
                     }
                     getActivity().runOnUiThread(() -> {
-                        SeedsFragment.this.adapter.setData(stocks);
-                        SeedsFragment.this.adapter.notifyDataSetChanged();
+                        adapter.setData(stocks);
+                        adapter.notifyDataSetChanged();
                     });
 
                 } catch (JSONException e) {
+                    e.printStackTrace();
+                    Log.i("======JSON====",e.getMessage());
                     getActivity().runOnUiThread(() -> {
                        // Toast.makeText(context, "format incorrect", Toast.LENGTH_SHORT).show();
                     });

@@ -13,7 +13,24 @@ public class Stock {
     }
 
     public Stock(String nom, String image, String details, String owner) {
+        this.nom = nom;
+        this.image = image;
+        this.details = details;
+        this.owner = owner;
+    }
 
+    public Stock(String nom, String photo, String etat_sanitaire, String variety, int prix, String qtt) {
+
+    }
+
+    @Override
+    public String toString() {
+        return "Stock{" +
+                "nom='" + nom + '\'' +
+                ", image='" + image + '\'' +
+                ", details='" + details + '\'' +
+                ", owner='" + owner + '\'' +
+                '}';
     }
 
     public String getNom() {

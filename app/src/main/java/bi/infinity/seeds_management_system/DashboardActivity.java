@@ -22,7 +22,7 @@ public class DashboardActivity extends AppCompatActivity {
         setContentView(R.layout.tablayout_menu);
         TabLayout tabHome = findViewById(R.id.tabLayout);
         ViewPager viewPager = findViewById(R.id.viewpager);
-        PageAdapter pageAdapter = new PageAdapter(getSupportFragmentManager());
+        PageAdapter pageAdapter = new PageAdapter(getSupportFragmentManager(), this);
 
         toolbar = findViewById(R.id.main_toolbar);
         toolbar.setTitle("Semences");
