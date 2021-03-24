@@ -34,7 +34,7 @@ public class Host {
         //return !(token.trim().isEmpty());
    // }
 
-   // public static String getSessionValue(Context context, String name){
+       // public static String getSessionValue(Context context, String name){
     //    sessionPreference = context.getSharedPreferences("user_session", Context.MODE_PRIVATE);
     //    String value = sessionPreference.getString(name, "");
      //   return value.trim();
