@@ -1,8 +1,6 @@
 package bi.infinity.seeds_management_system;
 
 
-
-import android.content.ClipData;
 import android.os.Bundle;
 
 import android.view.MenuItem;
@@ -10,12 +8,14 @@ import android.widget.SearchView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import androidx.viewpager.widget.ViewPager;
 import com.google.android.material.tabs.TabLayout;
 
 public class DashboardActivity extends AppCompatActivity {
      private Toolbar toolbar;
     private SearchView searchBar;
+    private SwipeRefreshLayout refresh_home;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
