@@ -6,6 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".Fragments.HomeFragment">
 
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15pt">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_seeds_item"
@@ -14,4 +19,6 @@
         android:layout_height="match_parent"
         tools:listitem="@layout/card_seeds_home"
         tools:itemCount="4" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
 </FrameLayout>
