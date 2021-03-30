@@ -1,5 +1,9 @@
 package bi.infinity.seeds_management_system.Model;
 
+import android.content.Context;
+
+import bi.infinity.seeds_management_system.Fragments.HomeFragment;
+
 public class Seed {
     public String nom, image, details,owner,qtt;
     public Integer prix;
@@ -33,7 +37,7 @@ public class Seed {
         this.nom = nom;
     }
 
-    public String getImage() {
+    public String getImage(Context fragment) {
         return image;
     }
 

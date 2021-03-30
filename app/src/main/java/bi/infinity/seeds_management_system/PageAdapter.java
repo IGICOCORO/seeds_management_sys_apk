@@ -11,7 +11,7 @@ public class PageAdapter extends FragmentStatePagerAdapter {
 
     private Context context;
     Fragment[] fragments = new Fragment[]{
-            new HomeFragment(), new SeedsFragment(context)
+            new HomeFragment(context), new SeedsFragment(context)
     };
 
     public PageAdapter(FragmentManager fm, Context context) {

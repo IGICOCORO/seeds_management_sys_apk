@@ -1,5 +1,6 @@
 package bi.infinity.seeds_management_system.Fragments;
 
+import android.content.Context;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -33,9 +34,15 @@ import okhttp3.Response;
 public class HomeFragment extends Fragment {
 
 
+    private final Context context;
     private RecyclerView recycler_seeds;
     private ArrayList<Seed> seeds;
     private AdapterSeedHome adapter;
+
+
+    public HomeFragment(Context context) {
+        this.context=context;
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -77,7 +84,7 @@ public class HomeFragment extends Fragment {
                     for (int i = 0; i<results.length(); i++) {
                         JSONObject item = results.getJSONObject(i);
                         seed = new Seed(
-                                item.getString("nom"),
+                                item.getString("plant"),
                                 item.getString("photo"),
                                 item.getString("etat_sanitaire"),
                                 item.getString("variety")

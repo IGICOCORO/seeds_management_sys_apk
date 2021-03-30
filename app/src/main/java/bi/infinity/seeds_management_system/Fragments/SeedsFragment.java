@@ -95,9 +95,9 @@ public class SeedsFragment extends Fragment {
             @Override
             public void onFailure(Call call, IOException e) {
                 Log.i("======JSON====",e.getMessage());
-                getActivity().runOnUiThread(() -> {
-                    Toast.makeText(context, "you are offline", Toast.LENGTH_SHORT).show();
-                });
+                //getActivity().runOnUiThread(() -> {
+                  //  Toast.makeText(context, "you are offline", Toast.LENGTH_SHORT).show();
+                //});
             }
             @Override
             public void onResponse(Call call, Response response) throws IOException {
@@ -109,10 +109,10 @@ public class SeedsFragment extends Fragment {
                         JSONObject item = results.getJSONObject(i);
 
                         stock = new Stock(
-                                item.getString("nom"),
-                                item.getString("photo"),
-                                item.getString("etat_sanitaire"),
-                                item.getString("variety")
+                                item.getString("quantite_initiale"),
+                                item.getString("seed.prix"),
+                                item.getString("seed.plant"),
+                                item.getString("seed.variety")
 
                         );
                         Log.i("=========item======", response.message());

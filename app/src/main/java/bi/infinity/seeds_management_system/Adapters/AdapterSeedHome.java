@@ -11,9 +11,12 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+
 import java.util.ArrayList;
 
 import bi.infinity.seeds_management_system.DetailsActivity;
+import bi.infinity.seeds_management_system.Fragments.HomeFragment;
 import bi.infinity.seeds_management_system.Model.Seed;
 import bi.infinity.seeds_management_system.R;
 
@@ -22,8 +25,10 @@ public class AdapterSeedHome extends RecyclerView.Adapter<AdapterSeedHome.ViewHo
     ArrayList<Seed> seeds;
 
     public AdapterSeedHome(ArrayList<Seed> seeds, Context context) {
+
         this.context = context;
         this.seeds = seeds;
+
     }
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -37,7 +42,7 @@ public class AdapterSeedHome extends RecyclerView.Adapter<AdapterSeedHome.ViewHo
         holder.txt_detail_item_name.setText(seed.details);
         holder.txt_seed_item_name.setText(seed.nom);
         holder.txt_seed_item_owner.setText(seed.owner);
-        //holder.img_seed.setText(seed.image);
+        Glide.with(context).load(seed.getImage(context)).into(holder.img_seed);
 
         holder.view.setOnClickListener(new View.OnClickListener() {
             @Override

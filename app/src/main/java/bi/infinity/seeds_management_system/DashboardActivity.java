@@ -41,8 +41,9 @@ public class DashboardActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.action_logout) {
-            logout();
-            return true;
+            if(!Host.isLogedIn(this)){
+                Host.logOut(this);
+            }
         }
         return super.onOptionsItemSelected(item);
     }
