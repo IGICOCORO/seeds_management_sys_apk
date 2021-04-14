@@ -49,7 +49,7 @@ public class DashboardActivity extends AppCompatActivity {
     }
 
     private void logout() {
-       finish();
+       closeContextMenu();
 
     }
 

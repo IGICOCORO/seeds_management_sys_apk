@@ -1,66 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".UserChoiceActivity">
-    <TextView
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="8dp"
-        android:layout_marginStart="5dp"
-        android:text=" stock and quality app"
-        android:textAlignment="center"
-        android:textColor="@android:color/black"
-        android:textSize="28sp" />
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="160dp"
-        android:scaleType="fitCenter"
-        android:src="@drawable/ic_semencier"/>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:orientation="horizontal">
-        <LinearLayout
-            android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:orientation="vertical">
-            <ImageButton
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:foregroundTintMode="add"
-                android:background="@drawable/ic_farmer"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
-                android:layout_marginBottom="48dp"
-                android:text="Farmer"
-                android:textColor="@android:color/black"
-                android:textSize="28sp" />
-        </LinearLayout>
+            android:text=" stock and quality app"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="28sp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="374dp"
+            android:layout_height="321dp"
+            android:layout_marginTop="104dp"
+            android:src="@drawable/ic_semencier"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.432"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:ignore="MissingConstraints" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="100dp"
-            android:orientation="vertical">
-            <ImageButton
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:background="@drawable/ic_grow_seed_password"/>
-            <TextView
-                android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="48dp"
-                android:text="grower"
-                android:textColor="@android:color/black"
-                android:textSize="28sp" />
+                android:layout_marginStart="8dp"
+                android:orientation="vertical">
+                <ImageButton
+                    android:id="@+id/farmer"
+                    android:layout_width="80dp"
+                    android:layout_height="79dp"
+                    android:background="@drawable/ic_farmer"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="36dp"
+                    tools:layout_editor_absoluteY="391dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Farmer"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="31dp"
+                    tools:layout_editor_absoluteY="466dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/grower_seed"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/ic_grow_seed_password"
+                    tools:layout_editor_absoluteX="292dp"
+                    tools:layout_editor_absoluteY="388dp"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="grower"
+                    android:textAlignment="center"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    tools:layout_editor_absoluteX="295dp"
+                    tools:layout_editor_absoluteY="465dp"
+                    tools:ignore="MissingConstraints" />
+
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </RelativeLayout>

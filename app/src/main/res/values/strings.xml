@@ -34,4 +34,35 @@
     <string name="ajouter" translatable="false">Ajouter</string>
     <string name="company" translatable="false">Company</string>
     <!-- TODO: Remove or change this placeholder text -->
+
+    <!--- Page d'accueil -->
+    <string name="home_page_title" translatable="false">Les mieux Votés</string>
+    <string name="home_page_last_plant" translatable="false">Dernières Semences</string>
+    <string name="home_page_plant_name" translatable="false">Nom de la plante</string>
+    <string name="plant_description" translatable="false">Description de la plante</string>
+
+    <!--- Page de collection-->
+    <string name="stock_page" translatable="false">Mon Stock</string>
+
+    <!--- Page d'ajout de plante-->
+    <string name="add_plant_page" translatable="false">Ajout d\'une Plante</string>
+    <string name="add_plant_page_upload" translatable="false">Charger l\'image</string>
+    <string name="add_plant_page_name_input" translatable="false">@string/item_plant_name</string>
+    <string name="add_plant_page_name_description_input" translatable="false">@string/item_plant__description</string>
+
+
+    <!---Plante customise-->
+    <string name="item_plant_name" translatable="false">Nom de la plante</string>
+    <string name="item_plant__description" translatable="false">Description de la plante</string>
+
+    <string name="add_plant_page_confirm_button" translatable="false">Confirmer</string>
+    <string name="popup_plant_name" translatable="false">Nom de la plante</string>
+    <string name="popup_plant_description_title" translatable="false">Description</string>
+    <string name="popup_plant_description_subtitle" translatable="false"> petite Description</string>
+    <string name="popup_plant_grow_title" translatable="false">Croissance</string>
+    <string name="popup_plant_grow_subtitle" translatable="false">Lente</string>
+    <string name="popup_plant_water_title">Consommation Eau</string>
+    <string name="popup_plant_water_subtitle">Faible</string>
+
+
 </resources>

@@ -4,4 +4,5 @@
     <string name="login" translatable="false">connexion </string>
     <string name="password" translatable="false">Mot de passe</string>
     <string name="semences" translatable="false">semences</string>
+
 </resources>
