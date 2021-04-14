@@ -4,6 +4,8 @@ import android.content.Context;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
+
+import bi.infinity.seeds_management_system.Fragments.HomeFragmementNew;
 import bi.infinity.seeds_management_system.Fragments.HomeFragment;
 import bi.infinity.seeds_management_system.Fragments.SeedsFragment;
 

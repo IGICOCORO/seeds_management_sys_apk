@@ -19,7 +19,7 @@ public class LoginActivity extends Activity {
             @Override
             public void onClick(View v) {
                 login_progressBar.setVisibility(View.VISIBLE);
-                Intent i = new Intent(LoginActivity.this, DashboardActivity.class);
+                Intent i = new Intent(LoginActivity.this, MainActivity.class);
                 startActivity(i);
 
             }
