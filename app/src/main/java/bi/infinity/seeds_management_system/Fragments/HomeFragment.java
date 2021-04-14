@@ -61,7 +61,7 @@ public class HomeFragment extends Fragment {
     private void fetchSeeds() {
 
         OkHttpClient client = new OkHttpClient();
-        HttpUrl.Builder urlBuilder = HttpUrl.parse(Host.URL + "/semences/").newBuilder();
+        HttpUrl.Builder urlBuilder = HttpUrl.parse(Host.URL +"/semences/").newBuilder();
         String url = urlBuilder.build().toString();
         Request request = new Request.Builder()
                 .url(url)
