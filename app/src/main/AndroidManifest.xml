@@ -12,7 +12,8 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.FullScreen">
-        <activity android:name=".VendreActivity"></activity>
+        <activity android:name=".UserChoiceActivity"></activity>
+        <activity android:name=".VendreActivity" />
         <activity
             android:name=".Dialogs.VenteDialog"
             tools:ignore="Instantiatable" />
