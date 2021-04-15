@@ -55,7 +55,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="8pt"
-        android:text="@string/semences"/>
+        android:text="@string/Variète"/>
     <Spinner
         android:id="@+id/combo_emission_category"
         android:layout_width="match_parent"
