@@ -15,8 +15,7 @@ import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 
-import bi.infinity.seeds_management_system.DetailsActivity;
-import bi.infinity.seeds_management_system.Fragments.HomeFragment;
+import bi.infinity.seeds_management_system.MainActivity;
 import bi.infinity.seeds_management_system.Model.Seed;
 import bi.infinity.seeds_management_system.R;
 
@@ -47,7 +46,7 @@ public class AdapterSeedHome extends RecyclerView.Adapter<AdapterSeedHome.ViewHo
         holder.view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(context, DetailsActivity.class);
+                Intent i = new Intent(context, MainActivity.class);
                 context.startActivity(i);
             }
         });

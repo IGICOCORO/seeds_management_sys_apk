@@ -2,7 +2,7 @@
     <string name="app_name" translatable="false">Seeds</string>
     <string name="login" translatable="false">login</string>
     <string name="password" translatable="false">Password</string>
-    <string name="semences" translatable="false">semences</string>
+    <string name="Variète" translatable="false">variète</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="fab_content_desc" translatable="false">btn_add_floating</string>
     <string name="semence" translatable="false"> Semence</string>
@@ -33,6 +33,7 @@
     <string name="annuler" translatable="false">annuler</string>
     <string name="ajouter" translatable="false">Ajouter</string>
     <string name="company" translatable="false">Company</string>
+    <string name="details" translatable="false">Détails</string>
     <!-- TODO: Remove or change this placeholder text -->
 
     <!--- Page d'accueil -->
@@ -45,8 +46,8 @@
     <string name="stock_page" translatable="false">Mon Stock</string>
 
     <!--- Page d'ajout de plante-->
-    <string name="add_plant_page" translatable="false">Ajout d\'une Plante</string>
-    <string name="add_plant_page_upload" translatable="false">Charger l\'image</string>
+    <string name="add_plant_page" translatable="false">Ajouter une Plante</string>
+    <string name="add_plant_page_upload" translatable="false">Charger image</string>
     <string name="add_plant_page_name_input" translatable="false">@string/item_plant_name</string>
     <string name="add_plant_page_name_description_input" translatable="false">@string/item_plant__description</string>
 
@@ -61,8 +62,9 @@
     <string name="popup_plant_description_subtitle" translatable="false"> petite Description</string>
     <string name="popup_plant_grow_title" translatable="false">Croissance</string>
     <string name="popup_plant_grow_subtitle" translatable="false">Lente</string>
-    <string name="popup_plant_water_title">Consommation Eau</string>
-    <string name="popup_plant_water_subtitle">Faible</string>
+    <string name="popup_plant_water_title" translatable="false">Consommation Eau</string>
+    <string name="popup_plant_water_subtitle" translatable="false">Faible</string>
+    <string name="category" translatable="false">categorie</string>
 
 
 </resources>

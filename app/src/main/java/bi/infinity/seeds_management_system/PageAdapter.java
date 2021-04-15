@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
+import bi.infinity.seeds_management_system.Fragments.AddFragmentPlant;
+import bi.infinity.seeds_management_system.Fragments.FragmentStock;
 import bi.infinity.seeds_management_system.Fragments.HomeFragmementNew;
 import bi.infinity.seeds_management_system.Fragments.HomeFragment;
 import bi.infinity.seeds_management_system.Fragments.SeedsFragment;
@@ -13,7 +15,7 @@ public class PageAdapter extends FragmentStatePagerAdapter {
 
     private Context context;
     Fragment[] fragments = new Fragment[]{
-            new HomeFragment(context), new SeedsFragment(context)
+            new HomeFragment(context), new SeedsFragment(context),new FragmentStock(),new AddFragmentPlant()
     };
 
     public PageAdapter(FragmentManager fm, Context context) {

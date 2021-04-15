@@ -1,5 +1,6 @@
 package bi.infinity.seeds_management_system.Fragments;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,7 +18,6 @@ import bi.infinity.seeds_management_system.R;
 public class HomeFragmementNew extends Fragment {
     private RecyclerView horizontal_recycler_plant,vertical_recycler_plant;
     private AdapterPlant adapter;
-
 
     @Nullable
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

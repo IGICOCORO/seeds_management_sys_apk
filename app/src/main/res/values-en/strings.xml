@@ -3,5 +3,5 @@
     <string name="app_name" translatable="true">Seeds</string>
     <string name="login" translatable="true">login</string>
     <string name="password" translatable="true">Password</string>
-    <string name="semences" translatable="true">Seeds</string>
+    <string name="Variète" translatable="true">Seeds</string>
 </resources>
