@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/default_margin"
     tools:context=".Fragments.HomeFragment">
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
@@ -12,13 +13,15 @@
         android:layout_height="match_parent"
         android:layout_marginTop="15pt">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_seeds_item"
-        android:layout_width="match_parent"
-        android:layout_marginTop="55dp"
-        android:layout_height="match_parent"
-        tools:listitem="@layout/card_seeds_home"
-        tools:itemCount="4" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/vertical_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/item_vertical_plant"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
 </FrameLayout>
