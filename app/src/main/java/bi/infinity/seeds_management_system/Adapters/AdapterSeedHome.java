@@ -31,17 +31,17 @@ public class AdapterSeedHome extends RecyclerView.Adapter<AdapterSeedHome.ViewHo
     }
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_seeds_home, parent, false);
+        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_vertical_plant, parent, false);
         return new ViewHolder(itemView);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Seed seed =  seeds.get(position);
-        holder.txt_detail_item_name.setText(seed.details);
+       /* holder.txt_detail_item_name.setText(seed.details);
         holder.txt_seed_item_name.setText(seed.nom);
         holder.txt_seed_item_owner.setText(seed.owner);
-        Glide.with(context).load(seed.getImage(context)).into(holder.img_seed);
+        Glide.with(context).load(seed.getImage(context)).into(holder.img_seed);*/
 
         holder.view.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,16 +63,14 @@ public class AdapterSeedHome extends RecyclerView.Adapter<AdapterSeedHome.ViewHo
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         View view;
-        TextView txt_detail_item_name ,txt_seed_item_name,txt_seed_item_owner ;
-        ImageView img_seed;
+        ImageView image_item;
+        ImageView star_icon;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            txt_detail_item_name = itemView.findViewById(R.id.txt_detail_item_name);
-            txt_seed_item_name = itemView.findViewById(R.id.txt_seed_item_name);
-            txt_seed_item_owner = itemView.findViewById(R.id.txt_seed_item_owner);
-            img_seed = itemView.findViewById(R.id.img_seed);
+            image_item = itemView.findViewById(R.id.image_item);
+            star_icon = itemView.findViewById(R.id.star_icon);
             view = itemView;
         }
+        }
     }
-}

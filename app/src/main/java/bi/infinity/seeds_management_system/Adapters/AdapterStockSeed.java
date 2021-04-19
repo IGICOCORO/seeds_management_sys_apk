@@ -35,17 +35,17 @@ public class AdapterStockSeed extends RecyclerView.Adapter<AdapterStockSeed.View
     @NotNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_seeds_home, parent, false);
+        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_vertical_plant, parent, false);
         return new ViewHolder(itemView);
     }
 
     @Override
     public void onBindViewHolder(@NonNull  ViewHolder holder, int position) {
-        Stock stock = stocks.get(position);
+      /*  Stock stock = stocks.get(position);
         holder.txt_detail_item_name.setText(stock.getDetails());
         Glide.with(context).load(stock.getImage()).into(holder.img_seed);
         holder.txt_seed_item_name.setText(stock.getNom());
-        holder.txt_seed_item_owner.setText(stock.getOwner());
+        holder.txt_seed_item_owner.setText(stock.getOwner());*/
 
         holder.view.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,15 +67,13 @@ public class AdapterStockSeed extends RecyclerView.Adapter<AdapterStockSeed.View
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
         View view;
-        TextView txt_detail_item_name ,txt_seed_item_name,txt_seed_item_owner ;
-        ImageView img_seed;
+        ImageView image_item;
+        ImageView star_icon;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            txt_detail_item_name = itemView.findViewById(R.id.txt_detail_item_name);
-            txt_seed_item_name = itemView.findViewById(R.id.txt_seed_item_name);
-            txt_seed_item_owner = itemView.findViewById(R.id.txt_seed_item_owner);
-            img_seed = itemView.findViewById(R.id.img_seed);
+            image_item = itemView.findViewById(R.id.image_item);
+            star_icon = itemView.findViewById(R.id.star_icon);
             view = itemView;
         }
     }
