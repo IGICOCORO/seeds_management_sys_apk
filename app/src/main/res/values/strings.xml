@@ -66,5 +66,10 @@
     <string name="popup_plant_water_subtitle" translatable="false">Faible</string>
     <string name="category" translatable="false">categorie</string>
 
+    <!--- BottomNavigationMenu -->
+
+
+
+
 
 </resources>
