@@ -36,6 +36,10 @@
     <string name="details" translatable="false">Détails</string>
     <!-- TODO: Remove or change this placeholder text -->
 
+    <!-- Drawer navigation -->
+    <string name="navigation_drawer_open" translatable="false">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close" translatable="false">close Navigation Drawer</string>
+
     <!--- Page d'accueil -->
     <string name="home_page_title" translatable="false">Les mieux Votés</string>
     <string name="home_page_last_plant" translatable="false">Dernières Semences</string>
@@ -67,6 +71,8 @@
     <string name="category" translatable="false">categorie</string>
 
     <!--- BottomNavigationMenu -->
+
+
 
 
 
