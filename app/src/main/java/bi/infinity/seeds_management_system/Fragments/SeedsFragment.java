@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import org.json.JSONArray;
@@ -51,6 +52,11 @@ public class SeedsFragment extends Fragment {
 
     public SeedsFragment(Context context) {
         this.context=context;
+    }
+
+    public SeedsFragment(BottomNavigationView.OnNavigationItemSelectedListener onNavigationItemSelectedListener) {
+        this.context = getContext();
+
     }
 
     @Override

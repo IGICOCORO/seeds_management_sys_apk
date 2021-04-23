@@ -24,8 +24,6 @@ import bi.infinity.seeds_management_system.Fragments.SeedsFragment;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-    private DrawerLayout drawer;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,22 +34,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 .beginTransaction()
                 .replace(R.id.fragment_container, new HomeFragmementNew())
                 .commit();
-        drawer = findViewById(R.id.drawer_layout);
+
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawer,R.string.navigation_drawer_open,R.string.navigation_drawer_close);
-        drawer.addDrawerListener(toggle);
-        toggle.syncState();
     }
 
-    @Override
-    public void onBackPressed() {
-        if (drawer.isDrawerOpen(GravityCompat.START)){
-            drawer.closeDrawer(GravityCompat.START);
-        }else {
-            super.onBackPressed();
-        }
-    }
 
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -64,7 +51,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                             selectedFragment = new HomeFragmementNew();
                             break;
                         case R.id.action_stock:
-                            selectedFragment = new FragmentStock();
+                            selectedFragment = new SeedsFragment(this);
                             break;
                         case R.id.action_add:
                             selectedFragment = new AddFragmentPlant();
@@ -77,6 +64,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                                 .replace(R.id.fragment_container, selectedFragment)
                                 .commit();
                     }
+                    DrawerLayout  drawer = findViewById(R.id.drawer_layout);
+                    drawer.closeDrawer(GravityCompat.START);
                     return true;
                 }
 
@@ -90,7 +79,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new HomeFragmementNew()).commit();
                 break;
             case R.id.nav_stock:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new FragmentStock()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new SeedsFragment(this)).commit();
                 break;
             case R.id.nav_add:
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new AddFragmentPlant()).commit();

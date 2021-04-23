@@ -11,7 +11,7 @@
         android:icon="@drawable/ic_seed"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme.FullScreen">
+        android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity android:name=".MainActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity android:name=".VendreActivity" />

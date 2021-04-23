@@ -23,7 +23,7 @@ public class FragmentStock extends Fragment {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
         vertical_recyclerView = view.findViewById(R.id.vertical_recyclerView);
-        adapter = new AdapterPlant(R.layout.item_vertical_plant);
+        adapter = new AdapterPlant(R.layout.item_vertical_plant,getActivity());
         vertical_recyclerView.setAdapter(adapter);
         return view;
     }

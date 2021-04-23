@@ -1,24 +1,25 @@
 package bi.infinity.seeds_management_system.Adapters;
 
-import android.app.Dialog;
-import android.content.Context;
-import android.content.DialogInterface;
+
+import android.app.Activity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.PopupMenu;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
 
 import bi.infinity.seeds_management_system.Dialogs.PlantPopup;
 import bi.infinity.seeds_management_system.R;
 
 public class AdapterPlant extends RecyclerView.Adapter<AdapterPlant.ViewHolder> {
     private final int layoutId;
-    public AdapterPlant(int layoutId) {
+    private final Activity activity;
+
+    public AdapterPlant(int layoutId, Activity activity) {
         this.layoutId = layoutId;
+        this.activity = activity;
     }
 
 
@@ -31,10 +32,10 @@ public class AdapterPlant extends RecyclerView.Adapter<AdapterPlant.ViewHolder> 
 
     @Override
     public void onBindViewHolder(@NonNull AdapterPlant.ViewHolder holder, int position) {
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
+        holder.view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               // new PlantPopup().show();
+                new PlantPopup(activity).show();
             }
         });
     }

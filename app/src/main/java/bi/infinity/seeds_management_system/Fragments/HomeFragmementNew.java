@@ -24,12 +24,12 @@ public class HomeFragmementNew extends Fragment {
         View view = inflater.inflate(R.layout.fragment_home_new, container, false);
 
          horizontal_recycler_plant = view.findViewById(R.id.horizontal_recyclerView);
-         adapter = new AdapterPlant(R.layout.item_horizontal_plant);
+         adapter = new AdapterPlant(R.layout.item_horizontal_plant,getActivity());
         horizontal_recycler_plant.setAdapter(adapter);
 
 
         vertical_recycler_plant = view.findViewById(R.id.vertical_recyclerView);
-        adapter = new AdapterPlant(R.layout.item_vertical_plant);
+        adapter = new AdapterPlant(R.layout.item_vertical_plant,getActivity());
         vertical_recycler_plant.setAdapter(adapter);
         return view;
 
