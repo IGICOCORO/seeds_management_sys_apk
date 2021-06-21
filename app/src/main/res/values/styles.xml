@@ -11,7 +11,7 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-    <style name="SeedsDarkActionBar"
+    <style name="Theme.Semences.DarkActionBar"
         parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
@@ -20,11 +20,15 @@
     </style>
     <style name="BottomNavigationTheme" parent="Widget.Design.BottomNavigationView">
         <item name="android:textSize">18sp</item>
-        <item name="android:fontFamily">@font/kanit</item>
 
     </style>
+    <style name="Theme.AppCompat.DayNight.Dialog" parent="Theme.AppCompat.Light.Dialog"/>
 
-    <style name="AppTheme">seeds</style>
+    <style name="AppTheme">semences</style>
+
+    <style name="AppBarOverlay">topbar</style>
+
+    <style name="PopupOverlay">Toolbar</style>
 
 
 </resources>

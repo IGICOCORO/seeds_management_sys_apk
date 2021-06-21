@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Fragments.AboutDevFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginLeft="@dimen/default_margin"
+       android:orientation="vertical">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center">
+           <ImageView
+               android:layout_width="120dp"
+               android:layout_height="120dp"
+               android:src="@drawable/ic_code" />
+
+       </RelativeLayout>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:layout_marginTop="@dimen/default_margin"
+           android:layout_weight="1"
+           android:textSize="@dimen/default_margin"
+           android:text="Nduwimana Guy Michel"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:layout_marginTop="@dimen/default_margin"
+           android:layout_weight="1"
+           android:textSize="@dimen/default_margin"
+           android:text="Web and Android Developer"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:layout_marginTop="@dimen/default_margin"
+           android:layout_weight="1"
+           android:textSize="@dimen/default_margin"
+           android:text="Email: nduwimanaguymich@gmail.com"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:layout_marginTop="@dimen/default_margin"
+           android:layout_weight="1"
+           android:textSize="@dimen/default_margin"
+           android:text="Email: nduwimanaguymich@hotmail.com"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:layout_marginTop="@dimen/default_margin"
+           android:layout_weight="1"
+           android:textSize="@dimen/default_margin"
+           android:text="Contact : +25779533729"/>
+
+   </LinearLayout>
+
+</FrameLayout>

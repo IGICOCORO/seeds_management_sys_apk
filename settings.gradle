@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = "seeds_management_system"
+rootProject.name = "Semences"
